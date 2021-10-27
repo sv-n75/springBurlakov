@@ -1,7 +1,7 @@
-package task_13_14_15.repository;
+package task_16.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import task_13_14_15.model.Passport;
+import task_16.model.Passport;
 
 public interface PassportRepository extends JpaRepository<Passport, Long> {
 

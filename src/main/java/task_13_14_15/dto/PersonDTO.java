@@ -13,6 +13,5 @@ public class PersonDTO {
     private String surname;
     private String name;
     private String patronymic;
-    private Integer age;
-    private String passport;
+    private PassportDTO passportDTO;
 }

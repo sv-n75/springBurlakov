@@ -25,31 +25,16 @@ public class Person {
 
     private String patronymic;
 
-    private Integer year;
-
     @Column(name = "creation_date")
     private LocalDate creationDate;
 
     private String password;
 
-   @OneToOne(cascade = CascadeType.ALL)
-   @JoinColumn(name = "passport_id")
-    private Passport personPassport;
-
     private String address;
 
     private String mobile;
 
-    public Person(String surname, String name, String patronymic, Integer year, LocalDate creationDate
-            , String password,  String address, String mobile) {
-        this.surname = surname;
-        this.name = name;
-        this.patronymic = patronymic;
-        this.year = year;
-        this.creationDate = creationDate;
-        this.password = password;
-        this.address = address;
-        this.mobile = mobile;
-    }
-
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "passport_id")
+    private Passport personPassport;
 }

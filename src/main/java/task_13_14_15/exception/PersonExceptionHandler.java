@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class PersonExceptionHandler {
 
     @ExceptionHandler(value = {PersonException.class})
-    public ResponseEntity<Object>handlerRequestException(PersonException e){
- return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+    public ResponseEntity<Object> handlerRequestException(PersonException e) {
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(value = {Exception.class})
-    public ResponseEntity<Object>handlerRequestException(Exception e){
+    public ResponseEntity<Object> handlerRequestException(Exception e) {
         return new ResponseEntity<>(PersonExceptionEnum.BAD_REQUEST.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }

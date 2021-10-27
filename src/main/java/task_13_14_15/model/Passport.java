@@ -29,5 +29,4 @@ public class Passport {
     @Column(name = "date_of_issue")
     private LocalDate dateOfIssue;
 
-
 }

@@ -10,23 +10,4 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-// можно объединить таблицы здесь при запуске при наследовании от строки CommandLine
-//    @Autowired
-//    private PersonRepository personRepository;
-//
-//    @Autowired
-//    private PassportRepository passportRepository;
-//
-//
-//    @Override
-//    public void run(String... args) throws Exception {
-//        List<Person> personList = new ArrayList<>(personRepository.findAll());
-//        List<Passport>passportList = new ArrayList<>(passportRepository.findAll());
-//        Iterator<Person> personIterator = personList.iterator();
-//        Iterator<Passport>passportIterator = passportList.iterator();
-//        while (personIterator.hasNext() && passportIterator.hasNext()){
-//            personIterator.next().setPersonPassport(passportIterator.next());
-//        }
-//        personRepository.saveAll(personList);
-//    }
 }
